@@ -44,7 +44,7 @@ class Index
 
         $result = [];
 
-        $xmlrpc = new \app\common\XmlRpc();
+        $xmlrpc = new \app\common\xmlrpc\XmlRpc();
 
         foreach($xmlConfs as $server=>$config) {
             $response = $xmlrpc->_request($server);

@@ -5,7 +5,7 @@
  * Date: 2019/2/16
  * Time: 9:31
  */
-namespace  app\common;
+namespace  app\common\xmlrpc;
 
 use think\facade\Config;
 
@@ -32,7 +32,7 @@ class XmlRpc {
         $xmlTimeout = Config::get('xmlrpc.timeout');
         $timeout = isset($xmlTimeout) ? $xmlTimeout : 3;
 
-        $xml = new \app\xmlrpc\XmlRpc();
+        $xml = new \xmlrpc\XmlRpc();
         $xml->initialize();
         $xml->server($config['url'],$config['port']);
         $xml->method('supervisor.'.$method);
