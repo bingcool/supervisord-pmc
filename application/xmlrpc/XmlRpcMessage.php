@@ -5,7 +5,7 @@
  * Date: 2019/2/16
  * Time: 11:52
  */
-namespace app\rpcxml;
+namespace app\xmlrpc;
 
 class XmlRpcMessage extends XmlRpc {
     /**

@@ -5,7 +5,7 @@
  * Date: 2019/2/16
  * Time: 9:31
  */
-namespace  app\rpcxml;
+namespace  app\xmlrpc;
 
 class XmlRpc {
 

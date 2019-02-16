@@ -32,7 +32,7 @@ class XmlRpc {
         $xmlTimeout = Config::get('xmlrpc.timeout');
         $timeout = isset($xmlTimeout) ? $xmlTimeout : 3;
 
-        $xml = new \app\rpcxml\XmlRpc();
+        $xml = new \app\xmlrpc\XmlRpc();
         $xml->initialize();
         $xml->server($config['url'],$config['port']);
         $xml->method('supervisor.'.$method);

@@ -5,7 +5,7 @@
  * Date: 2019/2/16
  * Time: 11:49
  */
-namespace app\rpcxml;
+namespace app\xmlrpc;
 
 class XmlRpcResponse {
     /**
