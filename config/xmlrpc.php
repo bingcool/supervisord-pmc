@@ -15,6 +15,7 @@ $config['show_host'] = false;
 $config['supervisor_servers'] = array(
 	'server01' => array(
 		'url' => 'http://192.168.99.103/RPC2',
+		'simple_swoole_http_url' => 'http://192.168.99.103:9507',
 		'port' => '9001',
 		'username' => 'bingcool',
 		'password' => '123456',

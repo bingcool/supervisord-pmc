@@ -127,6 +127,26 @@ class supervisorctl {
     }
 
     /**
+     * addProcessGroup 添加一个新的进程加入supervisor配置中
+     * @param $server
+     * @param $process_name
+     * @throws \Exception
+     */
+    public function addProcessGroup($server, $process_name) {
+        $this->xmlrpc->_request($server, 'addProcessGroup', [$process_name]);
+    }
+
+    /**
+     * removeProcessGroup 删除一个进程
+     * @param $server
+     * @param $process_name
+     * @throws \Exception
+     */
+    public function removeProcessGroup($server, $process_name) {
+        $this->xmlrpc->_request($server, 'removeProcessGroup', $process_name);
+    }
+
+    /**
      * getSupervisorVersion 获取supervisord version
      * @param $server
      * @return string
